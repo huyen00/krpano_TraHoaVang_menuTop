@@ -14,6 +14,7 @@ $(document).ready(function(){
       $("#icon_map").css('opacity','1');
       $("#icon_rotate").css('opacity','1');
       $("#icon_unrotate").css('opacity','1');
+      $("#album_thumb").css('opacity','1');
   });
   $(".guide").click(function(){
       $(".guide").hide();
@@ -29,6 +30,7 @@ $(document).ready(function(){
       $("#icon_map").css('opacity','1');
       $("#icon_rotate").css('opacity','1');
       $("#icon_unrotate").css('opacity','1');
+      $("#album_thumb").css('opacity','1');
   });
   $("#icon_guide").click(function(){
       $(".guide").show();
@@ -44,6 +46,7 @@ $(document).ready(function(){
       $("#icon_map").css('opacity','0');
       $("#icon_rotate").css('opacity','0');
       $("#icon_unrotate").css('opacity','0');
+      $("#album_thumb").css('opacity','0');
 
   });
 });
@@ -62,6 +65,7 @@ $(".close").click(function(){
       $("#icon_map").css('opacity','1');
       $("#icon_rotate").css('opacity','1');
       $("#icon_unrotate").css('opacity','1');
+      $("#album_thumb").css('opacity','1');
 });
 $(".info").click(function(){
     $(".info").hide();
@@ -77,6 +81,7 @@ $(".info").click(function(){
       $("#icon_map").css('opacity','1');
       $("#icon_rotate").css('opacity','1');
       $("#icon_unrotate").css('opacity','1');
+      $("#album_thumb").css('opacity','1');
 });
 $("#icon_info").click(function(){
     $(".info").show();
@@ -92,6 +97,7 @@ $("#icon_info").click(function(){
       $("#icon_map").css('opacity','0');
       $("#icon_rotate").css('opacity','0');
       $("#icon_unrotate").css('opacity','0');
+      $("#album_thumb").css('opacity','0');
 });
 // click show map
 $("#icon_map").click(function(){
@@ -108,6 +114,7 @@ $("#icon_map").click(function(){
   $("#icon_info").css('opacity','0');
   $("#icon_rotate").css('opacity','0');
   $("#icon_unrotate").css('opacity','0');
+  $("#album_thumb").css('opacity','0');
 });
 $(".close").click(function(){
   $(".map").hide();
@@ -123,6 +130,7 @@ $(".close").click(function(){
       $("#icon_info").css('opacity','1');
       $("#icon_rotate").css('opacity','1');
       $("#icon_unrotate").css('opacity','1');
+      $("#album_thumb").css('opacity','1');
 });
 $(".map").click(function(){
     $(".map").hide();
@@ -138,6 +146,41 @@ $(".map").click(function(){
       $("#icon_info").css('opacity','1');
       $("#icon_rotate").css('opacity','1');
       $("#icon_unrotate").css('opacity','1');
+      $("#album_thumb").css('opacity','1');
+});
+$("#icon_album").click(function(){
+  $(".album_thumb").show();
+  $("#icon_sharelink").css('opacity','0');
+  $("#icon_guide").css('opacity','0');
+  $("#icon_mute").css('opacity','0');
+  $("#icon_unmute").css('opacity','0');
+  $("#hotspot_Close").css('opacity','0');
+  $("#hotspot_open").css('opacity','0');
+  $("#icon_fullscreen").css('opacity','0');
+  $("#icon_VR").css('opacity','0');
+  $("#icon_info").css('opacity','0');
+  $("#icon_map").css('opacity','0');
+  $("#icon_rotate").css('opacity','0');
+  $("#icon_unrotate").css('opacity','0');
+  $("#icon_form").css('opacity','0');
+
+});
+$(".close_album_thumb").click(function(){
+  $(".album_thumb").hide();
+  $("#icon_sharelink").css('opacity','1');
+  $("#icon_guide").css('opacity','1');
+  $("#icon_mute").css('opacity','1');
+  $("#icon_unmute").css('opacity','1');
+  $("#hotspot_Close").css('opacity','1');
+  $("#hotspot_open").css('opacity','1');
+  $("#icon_fullscreen").css('opacity','1');
+  $("#icon_VR").css('opacity','1');
+  $("#icon_info").css('opacity','1');
+  $("#icon_map").css('opacity','1');
+  $("#icon_rotate").css('opacity','1');
+  $("#icon_unrotate").css('opacity','1');
+  $("#icon_form").css('opacity','1');
+
 });
 // click popup 
 $(".popup").click(function(){
@@ -186,6 +229,7 @@ $(document).ready(function(){
       $("#icon_map").css('opacity','1');
       $("#icon_rotate").css('opacity','1');
       $("#icon_unrotate").css('opacity','1');
+      $("#album_thumb").css('opacity','1');
 
   });
   $(".form").click(function(){
@@ -202,6 +246,7 @@ $(document).ready(function(){
       $("#icon_map").css('opacity','1');
       $("#icon_rotate").css('opacity','1');
       $("#icon_unrotate").css('opacity','1');
+      $("#album_thumb").css('opacity','1');
 
   });
   $("#icon_form").click(function(){
@@ -218,6 +263,7 @@ $(document).ready(function(){
       $("#icon_map").css('opacity','0');
       $("#icon_rotate").css('opacity','0');
       $("#icon_unrotate").css('opacity','0');
+      $("#album_thumb").css('opacity','0');
 
   });
 // xử lý popup
@@ -246,6 +292,13 @@ $("#link_menu_top").click(function(){
     $('.arrow-left').show();
     $('.arrow-right').hide();
    })
+});
+// click album
+$("#icon_album").click(function(){
+  $(".album_thumb").show();
+});
+$(".close_album_thumb").click(function(){
+  $(".album_thumb").hide();
 });
 
 // hs

@@ -1,23 +1,13 @@
 
 
 @media all and (min-width:1025px){
-    .form-project {
-        margin: auto;
-        margin-top: 30%;
-    }
-   .form_contact{
-    width: 50%;
-   }
+   
+  
     .icon_thumbs_up{
         left:48%;
     }
-    .show_menu{
-        margin-top:15%;
-    }
-    .menu_tour{
-        width: 240px;
-        margin-top:15%;
-    }
+   
+    
    
 }
 @media all and (min-width:1025px){
@@ -50,49 +40,20 @@
 }
 
 @media all and (max-width:1024px){
-    .form-project {
-        margin: auto;
-        margin-top: 30%;
-    }
    
-
-    .map_tour {
-        top: 10%;
-        width: 70%;
-        height: 400px;
-        margin: auto;
-        margin-top: 25%;
-        position: relative;
-    }
-    .guide_tour{
-        left:25%;
-    }
     .form-group {
         width: 75%;
         
     }
-    .form_contact{
-      
-        width: 50%;
-       
-        top: 20%;
-        left: 27%;
-    }
-    .contact{
-        padding:3rem;
-    }
+    
+   
     .btn-sub{
        
         width: 75%;
       
     }
-    .show_menu{
-        margin-top:20%;
-    }
-    .menu_tour{
-        width: 240px;
-        margin-top:20%;
-    }
+   
+   
     .icon_thumbs_up{
         left:45%;
     }
@@ -106,10 +67,7 @@
     .link_menu {
         font-size: 1rem;
     }
-    .info_image {
-       
-        height: 40%;
-    }
+   
     .logo_tour {
       
         padding: 0rem 1rem;
@@ -148,6 +106,45 @@
 .list_menu_top{
     justify-content: end;
 }
+/* album */
+.list_album_thumb{
+    width: 700px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -350px;
+    overflow: hidden;
+}
+.list_album{
+   overflow: auto;
+}
+.item_album{
+    width: 33%;
+    height: 200px;
+    margin-top:1rem;
+}
+.close_album_thumb {
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+}
+/* map, contact, guide */
+.button_close {
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+}
+.title_contact{
+    font-size: 1.2rem;
+}
+.form_contact, .map_tour{
+    width: 600px;
+    height: 400;
+    margin: -200px 0 0 -300px;
+}
+.guide_tour{
+    width: 600px;
+    height: 300px;
+    margin: -150px 0 0 -300px;
+}
     
 }
 @media all and (max-width:992px){
@@ -160,26 +157,8 @@
     .item_icon:hover .sub_action{
         display: none;
     }
-    .show_menu{
-        margin-top:25%;
-    }
-    .menu_tour{
-        margin-top: 25%;
-    }
-    .form_contact {
-        width: 50%;
-        top: 20%;
-        left: 25%;
-    }
-    .guide_tour{
-        left:27%;
-    }
-    .form-project{
-        margin-top:30%;
-    }
-    .map_tour{
-        margin-top:25%
-    }
+   
+  
     .logo_ocop{
         font-size: 0.9rem;
     }
@@ -221,6 +200,58 @@
 .list_menu_top{
     justify-content: end;
 }
+/* album */
+.list_album_thumb{
+    width: 700px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -350px;
+    overflow: hidden;
+}
+.list_album{
+   overflow: auto;
+}
+.item_album{
+    width: 33%;
+    height: 200px;
+    margin-top:0.8rem;
+}
+.close_album_thumb {
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+}
+/* map, contact, guide */
+.button_close {
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+}
+.title_contact{
+    font-size: 1.2rem;
+}
+.form_contact, .map_tour{
+    width: 600px;
+    height: 400;
+    margin: -200px 0 0 -300px;
+}
+.guide_tour{
+    width: 600px;
+    height: 300px;
+    margin: -150px 0 0 -300px;
+}
+.form-project {
+    width: 400px;
+    height: 200px;
+    margin: -100px 0 0 -200px;
+}
+.info_image {
+    width: 700px;
+    height: 300px;
+    margin: -150px 0 0 -350px;
+}
+.row_info_image{
+    height: 230px;
+}
    
 }
 
@@ -234,33 +265,9 @@
         
        }
     
-    .map_tour {
-        top: 10%;
-        width: 80%;
-        height: 400px;
-        margin: auto;
-        margin-top: 30%;
-        position: relative;
-    }
-       /* .guide img {
-        width: 400px;
-        margin-top: 30%;
-    }
-    .guide .close {
-        margin-top: 30%;
-          
-    } */
-    .form-project {
-            margin: auto;
-            margin-top: 25%;
-    }
-    .form_contact {
-        width: 70%;
-        left: 15%;
-    }
-    .contact {
-        padding: 2rem;
-    }
+   
+     
+  
     .form-group {
         width: 75%;
     }
@@ -310,32 +317,15 @@
          width:100%;
          line-height: 1.6;
     }
-    .guide_tour{
-        display: block;
-      width: 350px;
-      left: 30%;
-        top:30%;
-        padding:1rem;
-    }
+   
     .img_guide{
         height: 180px;
     width: 100px;
 }
-/* .list_menu_tour{
-    height: 45vh;
-} */
-.form-project{
-    width: 60%;
-    margin-top: 40%;
-}
-.col_info_image {
-    height: 200px;
-}
-.menu_tour{
-    left:-120%;
-    width: 200px;
-    margin-top:27%;
-}
+
+
+
+
 .logo_tour {
       
     padding: 0rem 1rem;
@@ -347,9 +337,6 @@
 }
 .logo_ocop{
     font-size: 0.6rem;
-}
-.show_menu{
-    margin-top: 25%;
 }
 
 .item_icon:hover .sub_action{
@@ -384,35 +371,64 @@
 .menu_contact_mobile{
     display: grid;
 }
+/* album */
+.list_album_thumb{
+    width: 500px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -250px;
+    overflow: hidden;
+}
+.list_album{
+   overflow: auto;
+}
+.item_album{
+    width: 50%;
+    height: 130px;
+    margin-top:0.8rem;
+}
+.close_album_thumb {
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+}
+/* map, contact, guide */
+.button_close {
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+}
+.title_contact{
+    font-size: 1.2rem;
+}
+.form_contact, .map_tour{
+    width: 400px;
+    height: 375px;
+    margin: -187px 0 0 -200px;
+}
+.guide_tour{
+    width: 400px;
+    height: 300px;
+    margin: -150px 0 0 -200px;
+}
+.form-project {
+    width: 400px;
+    height: 200px;
+    margin: -100px 0 0 -200px;
+}
+.info_image {
+    width: 600px;
+    height: 300px;
+    margin: -150px 0 0 -300px;
+}
+.row_info_image{
+    height: 230px;
+}
 }
 @media all and (max-width:768px){
-    .guide_tour{
-        display: block;
-      width: 350px;
-      left: 30%;
-        top:30%;
-        padding:1rem;
-    }
-    .img_guide{
-        height: 180px;
-    width: 100px;
-    }
+   
 
-    .map_tour {
-        top: 10%;
-        width: 80%;
-        height: 400px;
-        margin: auto;
-        margin-top: 30%;
-        position: relative;
-    }
-    .form-project{
-        width: 60%;
-        margin-top: 35%;
-    }
-    .col_info_image {
-        height: 200px;
-    }
+   
+    
     #icon_menu{
         display: block;
     }
@@ -422,12 +438,7 @@
     .item_icon:hover .sub_action{
         display: none;
     }
-    .show_menu{
-        margin-top: 25%;
-    }
-    .menu_tour{
-        margin-top:27%;
-    }
+    
     .logo_ocop{
         font-size: 0.7rem;
     }
@@ -510,6 +521,58 @@
     .menu_contact_mobile{
         display: flex;
     }
+    /* album */
+ .list_album_thumb{
+    width: 500px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -250px;
+    overflow: hidden;
+}
+.list_album{
+   overflow: auto;
+}
+.item_album{
+    width: 50%;
+    height: 130px;
+    margin-top:0.8rem;
+}
+.close_album_thumb {
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+}
+/* map, contact, guide */
+.button_close {
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+}
+.title_contact{
+    font-size: 1.2rem;
+}
+.form_contact, .map_tour{
+    width: 400px;
+    height: 375px;
+    margin: -187px 0 0 -200px;
+}
+.guide_tour{
+    width: 400px;
+    height: 300px;
+    margin: -150px 0 0 -200px;
+}
+.form-project {
+    width: 400px;
+    height: 200px;
+    margin: -100px 0 0 -200px;
+}
+.info_image {
+    width: 400px;
+    height: 200px;
+    margin: -100px 0 0 -200px;
+}
+.row_info_image{
+    height: 140px;
+}
 }
 
 @media all and (max-width:600px){
@@ -538,38 +601,19 @@
    .addlist_menu{
     display: grid;
    }
-   .form-project {
-    margin: auto;
-    margin-top: 50%;
-}
-.map_tour {
-    top: 10%;
-    width: 80%;
-    height: 400px;
-    margin: auto;
-    margin-top: 40%;
-    position: relative;
-}
+ 
+
     .icon_thumbs_bottom {
         left:35%;
     }
-    .form_contact {
-        width: 80%;
-        left: 10%;
-    }
-    .contact {
-        padding: 2rem;
-    }
+    
     .form-group {
         width: 100%;
     }
     .btn-sub{
         width: 100%;
     }
-    .menu_tour{
-        left:-120%;
-        width: 330px;
-    }
+    
     .arrow-right{
         display: block;
     }
@@ -619,26 +663,10 @@
          width:100%;
          line-height: 1.6;
     }
-    .guide_tour{
-        display: block;
-      width: 350px;
-      left: 20%;
-        top:30%;
-        padding:1rem;
-    }
-    .img_guide{
-        height: 180px;
-    width: 100px;
-}
-/* .list_menu_tour{
-    height: 45vh;
-} */
+   
+   
 
-.menu_tour{
-    left:-120%;
-    width: 200px;
-    margin-top:32%;
-}
+
 .logo_tour {
       
     padding: 0rem 1rem;
@@ -658,26 +686,16 @@
     padding: 0.2rem 0.7rem;
 }
 /* popup */
-.form-project{
-    width: 60%;
-}
+
 
 .info_duan, .info_infomation_image, .popup, .info_information, .image_tra{
     /* top:35%; */
 }
-.info_general, .info_image{
+.info_general{
     width: 80%;
 }
-.info_image{
-    height: auto;
-}
-.row_info_image {
-    display: block;
-}
-.col_info_image {
-    height: 140px;
-    width: 100%;
-}
+
+
 .form_popup {
     width: 80%;
     height: 40%;
@@ -753,7 +771,58 @@
     .menu_contact_mobile{
         display: flex;
     }
-
+ /* album */
+ .list_album_thumb{
+    width: 500px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -250px;
+    overflow: hidden;
+}
+.list_album{
+   overflow: auto;
+}
+.item_album{
+    width: 50%;
+    height: 130px;
+    margin-top:0.8rem;
+}
+.close_album_thumb {
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+}
+ /* map, contact, guide */
+ .button_close {
+    font-size: 1rem;
+    padding: 0rem 0.5rem;
+}
+.title_contact{
+    font-size: 1.2rem;
+}
+.form_contact, .map_tour{
+    width: 400px;
+    height: 375px;
+    margin: -187px 0 0 -200px;
+}
+.guide_tour{
+    width: 400px;
+    height: 300px;
+    margin: -150px 0 0 -200px;
+}
+.form-project {
+    width: 400px;
+    height: 200px;
+    margin: -100px 0 0 -200px;
+}
+.info_image {
+    width: 400px;
+    height: 200px;
+    margin: -100px 0 0 -200px;
+}
+.row_info_image{
+    height: 140px;
+}
 
 }
 
@@ -776,19 +845,6 @@
    .addlist_menu{
     display: grid;
    }
-   .form-project {
-    margin: auto;
-    margin-top: 40%;
-    width: 80%;
-}
-.map_tour {
-    top: 10%;
-    width: 80%;
-    height: 400px;
-    margin: auto;
-    margin-top: 40%;
-    position: relative;
-}
   
     .item_icon{
         padding: 0.5rem 0.5rem;
@@ -797,13 +853,7 @@
     .icon_thumbs_bottom {
         left:35%;
     }
-    .form_contact {
-        width: 80%;
-        left: 10%;
-    }
-    .contact {
-        padding: 2rem;
-    }
+    
     .form-group {
         width: 100%;
     }
@@ -860,25 +910,8 @@
          width:100%;
          line-height: 1.6;
     }
-    .guide_tour{
-        display: block;
-      width: 80%;
-      left: 10%;
-        top:30%;
-        padding:1rem;
-    }
-    .img_guide{
-        height: 180px;
-    width: 100px;
-}
-/* .list_menu_tour{
-    height: 45vh;
-} */
-.menu_tour{
-    left:-120%;
-    width: 200px;
-    margin-top:37%;
-}
+    
+
 .logo_tour {
       
     padding: 0rem 1rem;
@@ -899,14 +932,7 @@
 }
 /* popup */
 /* info  */
-.form-project{
-    position: absolute;
-    top: 30%;
-    margin-top: 0;
-    width: 80%;
-    height: 25%;
-    margin-left:2rem
-   }
+
    .title_form_project{
     font-size: 1rem;
    }
@@ -938,19 +964,10 @@
 .info_duan, .info_infomation_image, .popup, .info_information, .image_tra{
     /* top:35%; */
 }
-.info_general, .info_image{
+.info_general{
     width: 80%;
 }
-.info_image{
-    height: auto;
-}
-.row_info_image {
-    display: block;
-}
-.col_info_image {
-    height: 140px;
-    width: 100%;
-}
+
 .form_popup {
     width: 80%;
     height: 40%;
@@ -1026,6 +1043,51 @@
     .menu_contact_mobile{
         display: flex;
     }
+     /* album */
+     .list_album_thumb{
+        width: 300px;
+        height: 200px;
+        top: 50%;
+        left: 50%;
+        margin: -100px 0 0 -150px;
+        overflow: hidden;
+    }
+    .list_album{
+       overflow: auto;
+    }
+    .item_album{
+        width: 100%;
+        height: 100%;
+        margin-top:0.5rem;
+    }
+    .close_album_thumb {
+        font-size: 1rem;
+        padding: 0rem 0.5rem;
+    }
+
+     /* map, contact, guide */
+     .button_close {
+        font-size: 1rem;
+        padding: 0rem 0.5rem;
+    }
+    .form_contact, .guide_tour, .map_tour{
+        width: 300px;
+        height: 350px;
+        margin: -175px 0 0 -150px;
+    }
+    .form-project {
+        width: 300px;
+        height: 200px;
+        margin: -100px 0 0 -150px;
+    }
+    .info_image {
+        width: 300px;
+        height: 200px;
+        margin: -100px 0 0 -150px;
+    }
+    .row_info_image{
+        height: 140px;
+    }
 
 }
 
@@ -1053,13 +1115,7 @@ h5{
     display: grid;
    }
    /* info  */
-   .form-project{
-    position: absolute;
-    top: 30%;
-    margin-top: 0;
-    width: 80%;
-    height: 25%;
-   }
+  
    .title_form_project{
     font-size: 1rem;
    }
@@ -1088,24 +1144,11 @@ h5{
    .form_guide_text{
     font-size: 0.8rem;
    }
-   .map_tour {
-    /* top: 10%; */
-    width: 100%;
-    height: 400px;
-    margin: auto;
-    margin-top: 70%;
-    position: relative;
-}
+  
     .icon_thumbs_bottom {
         left:35%;
     }
-    .form_contact {
-        width: 80%;
-        left: 10%;
-    }
-    .contact {
-        padding: 2rem;
-    }
+    
     .form-group {
         width: 100%;
     }
@@ -1116,11 +1159,7 @@ h5{
         padding: 0.4rem 0.5rem;
     }
 
-    .menu_tour{
-        left:-120%;
-        width: 200px;
-        margin-top:55%;
-    }
+    
     .icon_show_menu{
         font-size: 15px;
     }
@@ -1174,20 +1213,7 @@ h5{
          line-height: 1.6;
     }
 
-    .guide_tour{
-        display: block;
-      width: 300px;
-      left: 3%;
-        top:30%;
-        padding:1rem;
-    }
-    .img_guide{
-        height: 180px;
-    width: 100px;
-    }
-    /* .list_menu_tour{
-        height: 45vh;
-    } */
+    
     .logo_tour {
       
         padding: 0rem 1rem;
@@ -1208,19 +1234,11 @@ h5{
     .info_duan, .info_infomation_image, .popup, .info_information, .image_tra{
         /* top:35%; */
     }
-    .info_general, .info_image{
+    .info_general{
         width: 80%;
     }
-    .info_image{
-        height: auto;
-    }
-    .row_info_image {
-        display: block;
-    }
-    .col_info_image {
-        height: 140px;
-        width: 100%;
-    }
+    
+   
     .form_popup {
         width: 90%;
         height: 40%;
@@ -1297,5 +1315,50 @@ h5{
     .menu_contact_mobile{
         display: flex;
     }
+    /* album */
+    .list_album_thumb{
+        width: 300px;
+        height: 200px;
+        top: 50%;
+        left: 50%;
+        margin: -100px 0 0 -150px;
+        overflow: hidden;
+    }
+    .list_album{
+       overflow: auto;
+    }
+    .item_album{
+        width: 100%;
+        height: 100%;
+        margin-top:0.5rem;
+    }
+    .close_album_thumb {
+        font-size: 1rem;
+        padding: 0rem 0.5rem;
+    }
+    /* map, contact, guide, info  */
+    .button_close {
+        font-size: 1rem;
+        padding: 0rem 0.5rem;
+    }
+    .form_contact, .guide_tour, .map_tour{
+        width: 300px;
+        height: 350px;
+        margin: -175px 0 0 -150px;
+    }
+    .form-project {
+        width: 300px;
+        height: 200px;
+        margin: -100px 0 0 -150px;
+    }
+    .info_image {
+        width: 300px;
+        height: 200px;
+        margin: -100px 0 0 -150px;
+    }
+    .row_info_image{
+        height: 140px;
+    }
+    
     
 }
