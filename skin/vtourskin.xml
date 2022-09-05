@@ -862,6 +862,7 @@
 			copy(newsceneindex, scene[get(newscene)].index);
 			skin_loadscene(get(newsceneindex), calc(newsceneindex LT cursceneindex ? skin_settings.loadscene_blend_prev : (newsceneindex GT cursceneindex ? skin_settings.loadscene_blend_next : skin_settings.loadscene_blend)) );
 		);
+
 	</action>
 
 
@@ -870,6 +871,7 @@
 		if(newsceneindex GE 0 AND newsceneindex LT scene.count,
 			skin_loadscene(get(newsceneindex), calc(indexadd LT 0 ? skin_settings.loadscene_blend_prev : skin_settings.loadscene_blend_next));
 		);
+	
 	</action>
 
 
@@ -881,6 +883,18 @@
 		skin_loadscene(get(newsceneindex), calc(indexadd LT 0 ? skin_settings.loadscene_blend_prev : skin_settings.loadscene_blend_next));
 	</action>
 
+<action name="prev_title" type="Javascript">
+	<![CDATA[
+      
+       var name_scene = krpano.get("scene[" + args[1] + "].title");
+      var title2 = String(name_scene);
+       var title_scene= document.getElementById("name_scene");
+         
+       $("#name_scene").html(title2);
+     
+
+    ]]>
+</action>
 
 	<action name="skin_loadscene" scope="local" args="newscenenameorindex, blendmode">
 		if(webvr.isenabled AND scene.count GT 1,

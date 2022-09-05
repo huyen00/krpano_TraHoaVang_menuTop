@@ -586,6 +586,13 @@ function close_image_duan_tra(){
         
         
     });
+    // title scene html 
+    getSceneTitleName();
+    function getSceneTitleName(){ 
+      var title = String( krpano.get("scene[get(xml.scene)].title") ); 
+      console.log("title ="+ title);
+      $("#name_scene").html(title);
+    };
     // xu ly VR
     $("#icon_VR").on("click", function(e){
       krpano.call("webvr.enterVR()");
@@ -653,6 +660,7 @@ function close_image_duan_tra(){
       
       });
     krpano.call("load_scene(" +link_scene + ")");
+    getSceneTitleName();
    
   });
 
@@ -680,6 +688,7 @@ function close_image_duan_tra(){
     $(this).removeClass("active");
  
     krpano.call("load_scene(" +link_scene + ")");
+    getSceneTitleName();
   });
   // xu ly minimap
  

@@ -7,7 +7,7 @@
     linkedscene=""
     linkedscene_lookat=""
     ondown="draghotspot();" 
-    onclick="skin_hotspotstyle_click();activeScene_menu();activeScene()"
+    onclick="skin_hotspotstyle_click();activeScene_menu();activeScene();linkscene_title()"
     onover="tween(scale,0.25);"
     onout="tween(scale,0.2);"
     onloaded="wobble(scale,0.2,0.25,0.7);"
@@ -18,7 +18,7 @@
 	  tooltip=""
 	  linkedscene=""
 	  linkedscene_lookat=""
-	  onclick="skin_hotspotstyle_click();activeScene_menu();activeScene()"
+	  onclick="skin_hotspotstyle_click();activeScene_menu();activeScene();linkscene_title()"
 	  depth="1000"
 	  scale="0.2"
 	  onover="tween(scale,0.3);"
@@ -33,7 +33,7 @@
 	  tooltip=""
 	  linkedscene=""
 	  linkedscene_lookat=""
-	  onclick="skin_hotspotstyle_click();activeScene_menu();activeScene()"
+	  onclick="skin_hotspotstyle_click();activeScene_menu();activeScene();linkscene_title()"
 	  depth="1000"
 	  scale="1"
 	  onover="tween(scale,1.15);"
@@ -333,7 +333,7 @@
 		inc(frame,1,get(lastframe),0);
 		mul(ypos,frame,frameheight);
 		txtadd(crop,'0|',get(ypos),'|',get(framewidth),'|',get(frameheight));
-		delayedcall(0.05, if(loaded, hotspot_animate3() ) );
+		delayedcall(0.09, if(loaded, hotspot_animate3() ) );
 	</action> 
   <action name="wobble" scope="local" args="attribute, min, max, time">
 	  set(local.vverh, false);
@@ -345,9 +345,28 @@
 			);
 		);
   </action>
+  <!-- <action name="linkscene_title">
+        title_scene(get(linkedscene));  
+  </action> -->
+
+  <action name="linkscene_title" >
+    linkscene_title_xml(get(linkedscene));  
+  </action>
+  <action name="linkscene_title_xml" type="Javascript">
+    <![CDATA[
+      
+      var name_scene = krpano.get("scene[" + args[1] + "].title");
+      var title2 = String(name_scene);
+       var title_scene= document.getElementById("name_scene");
+         
+       $("#name_scene").html(title2);
+     
+
+    ]]>
+  </action>
 
   <action name="activeScene_menu" >
-    activeScene_html_menu(get(linkedscene));
+    activeScene_html_menu(get(linkedscene));  
   </action>
 
   <action name="activeScene_html_menu" type="Javascript">
@@ -380,7 +399,6 @@
 
   <action name="activeScene_html" type="Javascript">
     <![CDATA[
-     console.log(args[1]);
      var elems1 = document.querySelectorAll(".active");
       [].forEach.call(elems1, function(el) {
         el.classList.remove("active");
@@ -397,7 +415,6 @@
         
         
         });
-      console.log(elem1);
       elem1.classList.add("active");
     
       

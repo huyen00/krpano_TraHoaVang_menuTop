@@ -25,6 +25,7 @@
 		sub(index_scene,index_scene,1);
 		set(backscene_name, get(scene[get(index_scene)].name));
 		loadscene(backscene_name);
+		
 	</action>
 	
 	<!-- <plugin  name = "soundinterface"
@@ -36,6 +37,7 @@
          mute = "false" 
         />
  -->
+ 
  <action name="hideallhotspots">
 
 	for( set(i, 0), i LT hotspot.count, inc(i),
