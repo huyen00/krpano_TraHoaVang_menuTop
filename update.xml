@@ -45,6 +45,17 @@
     onhover="get_scene_data"  
 	/>
 
+  <style name="hotspot_point"
+    scale=".5"
+    url="assets/img/new_spotd7_gif.png"
+    crop="0|0|100|100"
+    framewidth="128" frameheight="128" frame="0" lastframe="24"
+     onclick="skin_hotspotstyle_click();activeScene_menu();activeScene();linkscene_title()"
+    ondown="draghotspot();" 
+    onloaded="hotspot_animate();"
+    onhover="get_scene_data"         
+  />   
+
   <style name="hs_image_text" url="skin/hs_text2.png" scale="0.8" edge="bottom" distorted="false"
 	  tooltip=""
 	  linkedscene=""
@@ -328,7 +339,13 @@
     
     
    
-   
+  <action name="hotspot_animate">
+    inc(frame,1,get(lastframe),0);
+    mul(ypos,frame,frameheight);
+    txtadd(crop,'0|',get(ypos),'|',get(framewidth),'|',get(frameheight));
+    delayedcall(.035, if(loaded, hotspot_animate() ) );
+  </action>
+
   <action name="hotspot_animate3">
 		inc(frame,1,get(lastframe),0);
 		mul(ypos,frame,frameheight);
