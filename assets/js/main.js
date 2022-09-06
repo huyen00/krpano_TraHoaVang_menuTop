@@ -320,21 +320,21 @@ $(document).ready(function(){
 var array_list = [
   // 0
   {
-    title_list : "Thông tin khu nguyên liệu A",
+    title_list : "Khu nguyên liệu A",
     content_list: "Là khu nguyên liệu đã  và đang cho thu hoạch ổn định (gồm nhiều cây 3-7 năm tuổi, ngoài ra có các khu vực đang phát triển cây con độ tuổi 1,5 - 2,5 năm tuổi). Diện tích khoảng 10ha"
    
     
   },
   // 1
   {
-    title_list : "Thông tin khu nguyên liệu B",
+    title_list : "Khu nguyên liệu B",
     content_list: "Là khu mới phát triển (gồm nhiều cây con độ tuổi dưới 1 năm tới 2 năm tuổi), đây là khu nguyên liệu của thành viên HTX, mà trong đó thành viên được hỗ trợ giống, kỹ thuật, bao tiêu thu mua... tạo vùng nguyên liệu ổn định lâu dài cũng như tạo công ăn việc làm cho nhân dân địa phương. Diện tích khoảng 6ha."
    
   
   },
   // 2
   {
-    title_list : "Thông tin khu cây trồng lâu năm",
+    title_list : "Khu cây trồng lâu năm",
     content_list: "Khu gồm cây trà mẹ, lâu năm tuổi (cây 10-20 năm tuổi) vừa cung cấp hoa vừa cung cấp quả, hạt giống cũng như phôi chiết. Khu cây lâu năm tuổi kết hợp một số khu vực khu nguyên liệu A là nguồn cung cấp chính cây con cho cả khu vực nguyên liệu xung quanh khác."
    
    
@@ -342,7 +342,7 @@ var array_list = [
   },
   // 3
   {
-    title_list : "Thông tin khu Vườn Ươm",
+    title_list : "Khu Vườn Ươm",
     content_list: "Khu vườn ươm là nơi nhân giống, tạo sự chủ động nguồn cung cho HTX cũng như vùng nguyên liệu được bền vững."
    
    
@@ -351,12 +351,12 @@ var array_list = [
   
   // 4
   {
-    title_list : "Thông tin Nhà thu mua",
+    title_list : "Nhà thu mua",
     content_list: "Nhà ở của chủ cơ sở kinh doanh kèm chức năng thu mua nguyên liệu của thành viên HTX cũng như nhân dân quanh vùng"
   },
   // 5
   {
-    title_list : "Thông tin Nhà Trưng bày sản phẩm",
+    title_list : "Nhà Trưng bày sản phẩm",
     content_list: "Khu tổ hợp nhà trưng bày sản phẩm gồm khu trưng bày, khu xưởng sấy, kho và tiếp giáp khu vườn ươm.Đây là điểm giới thiệu và bán sản phẩm OCOP thứ 3/5 điểm giới thiệu và bán sản phẩm OCOP trên địa bàn tỉnh được hỗ trợ theo QĐ 1656/QĐ-UBND ngày 19 tháng 8 năm 2020 của UBND tỉnh đã khai trương và đi vào hoạt động "
     
    
@@ -409,12 +409,12 @@ var array_list = [
   },
   // 15
   {
-    title_list : "Thông tin máy sấy lạnh",
+    title_list : "Máy sấy lạnh",
     content_list: "Sấy lạnh là phương pháp sấy bằng tác nhân là không khí rất khô ở nhiệt độ thấp hơn nhiệt độ sấy thông thường. Dải nhiệt độ sấy từ 35-600C, độ ẩm không khí sấy vào khoảng 10-30%. Quá trình sấy được tiến hành ở áp suất khí quyển. Máy sấy lạnh được cấu thành bởi một máy bơm nhiệt được đặt trong một tủ sấy hoặc một hầm sấy tùy theo quy mô. Máy bơm nhiệt có một đầu nóng và một đầu lạnh. Đầu nóng sẽ cung cấp nhiệt lượng cho tác nhân sấy, còn đầu lạnh dùng để tách ẩm cho không khí sấy. Do đó, máy sấy lạnh còn gọi là máy sấy bơm nhiệt. "
   },
   // 16
   {
-    title_list : "Thông tin máy sấy thăng hoa",
+    title_list : "Máy sấy thăng hoa",
     content_list: "Sấy thăng hoa hay sấy đông khô: Đây là phương pháp sấy ưu việt nhất trong tất cả phương pháp sấy hiện nay. Sấy thăng hoa (freeze drying) là một kỹ thuật còn được gọi là “làm khô lạnh”. Trong đó sản phẩm được sấy khô qua quá trình thăng hoa của nước dưới nhiệt độ và áp suất thấp. Nước trong sản phẩm được đông lạnh thành đá sau đó được loại bỏ trực tiếp ra khỏi sản phẩm bằng cách hóa hơi. Điều này được thực hiện trong môi trường chân không."
   },
 
@@ -424,20 +424,20 @@ var array_list = [
 
 var array_info = [
   {
-    title_info: "Thông tin sản phẩm Trà Loại 1",
+    title_info: "Sản phẩm Trà Loại 1",
     content_info: "Trà loại 1 là ....<br> 1...<br> 2.... <br>3..."
     
    
     
   },
   {
-    title_info : "Thông tin sản phẩm Trà Loại 2",
+    title_info : "Sản phẩm Trà Loại 2",
     content_info: "Trà loại 2 là ....<br> 1...<br> 2.... <br>3..."
    
   
   },
   {
-    title_info : "Thông tin sản phẩm Trà Loại 3",
+    title_info : "Sản phẩm Trà Loại 3",
     content_info: "Trà loại 3 là ....<br> 1...<br> 2.... <br>3..."
    
    
