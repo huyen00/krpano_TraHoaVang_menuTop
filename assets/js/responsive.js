@@ -45,21 +45,15 @@ $(document).ready(function(){
            $(".menu_sub").hide();
         });
      }
-   //   else{
-   //    $("#icon_menusub").click(function(){
-   //       $(".list_menu").show();
-   //      });
-   //      $("#icon_menu").click(function(){
-   //         $(".menu_sub").show();
-   //      });
-   //   }
    
 
-   // menu mobile
-  $("#menu_mobile").click(function(){
-   $(".menu_top_mobile").slideToggle();
-  })
+   // menu mobile top
+   $("#menu_mobile").click(function(){
+      $(".menu_top_mobile").slideToggle();
+   });
+   
   });
+  
 
 
  

@@ -1,12 +1,13 @@
 ﻿<krpano version="1.20.6" title="Virtual Tour">
 <include url="action_html.xml" />
 	<!-- <include url="plugins/dragg.xml" /> -->
-	 <include url="skin/vtourskin.xml" />
+	
       <!-- <include url="plugins/showtext.xml" /> -->
     <!-- <include url="plugins/polygonal_hotspots_editor.xml" /> -->
     <!-- <include url="plugins/dragg/dragg.xml" /> -->
     <include url="option.xml" />
      <include url="update.xml" />
+      <include url="skin/vtourskin.xml" />
       <include url="plugins/popup_blur.xml" />
       <include url="plugins/youtube_player.xml" />
           <include url="plugins/showtext.xml" />
@@ -141,7 +142,7 @@
     <point ath="-159.09024875651653" atv="19.837348520649865" />
     <point ath="-169.8957167675348" atv="23.50300237151647" />
 </hotspot>
-        <hotspot name="hs6" style="show_hide_polygo" devices="!mobile" onhover="showInfo('Khu  vườn ươm')" >
+        <hotspot name="hs6" style="show_hide_polygo" devices="!mobile" onhover="showInfo('Khu  vườn ươm')"  >
             <point ath="145.07084527352168" atv="32.67669591295018" />
             <point ath="145.10020868354098" atv="27.77252717285418" />
             <point ath="148.6645059323023" atv="27.590821159641322" />
@@ -771,7 +772,7 @@
 
 	</scene>
 
-	<scene name="scene_11_vuonuom1" title="Khu Vườn Ươm" onstart="" thumburl="panos/11_vuonuom1.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_11_vuonuom1" title="Vườn Ươm 01" onstart="" thumburl="panos/11_vuonuom1.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="153.593" vlookat="8.878" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 

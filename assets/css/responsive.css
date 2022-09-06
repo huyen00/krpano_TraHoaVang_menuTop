@@ -109,10 +109,10 @@
 /* album */
 .list_album_thumb{
     width: 700px;
-    height: 400px;
+    height: 450px;
     top: 50%;
     left: 50%;
-    margin: -200px 0 0 -350px;
+    margin: -225px 0 0 -350px;
     overflow: hidden;
 }
 .list_album{
@@ -141,9 +141,23 @@
     margin: -200px 0 0 -300px;
 }
 .guide_tour{
-    width: 600px;
+    width: 400px;
     height: 300px;
-    margin: -150px 0 0 -300px;
+    margin: -150px 0 0 -200px;
+}
+.form_guide_text{
+    font-size: 0.9rem;
+}
+/* info */
+.info_general{
+    width: 700px;
+    height: 350px;
+    margin: -175px 0 0 -350px;
+}
+.form_popup{
+    width: 700px;
+    height: 350px;
+    margin: -175px 0 0 -350px;
 }
     
 }
@@ -203,10 +217,10 @@
 /* album */
 .list_album_thumb{
     width: 700px;
-    height: 400px;
+    height: 450px;
     top: 50%;
     left: 50%;
-    margin: -200px 0 0 -350px;
+    margin: -225px 0 0 -350px;
     overflow: hidden;
 }
 .list_album{
@@ -235,9 +249,12 @@
     margin: -200px 0 0 -300px;
 }
 .guide_tour{
-    width: 600px;
+    width: 400px;
     height: 300px;
-    margin: -150px 0 0 -300px;
+    margin: -150px 0 0 -200px;
+}
+.form_guide_text{
+    font-size: 0.9rem;
 }
 .form-project {
     width: 400px;
@@ -252,6 +269,20 @@
 .row_info_image{
     height: 230px;
 }
+.col_info_image img{
+    object-fit: cover;
+}
+/* info */
+.info_general{
+    width: 700px;
+    height: 350px;
+    margin: -175px 0 0 -350px;
+}
+.form_popup{
+    width: 700px;
+    height: 350px;
+    margin: -175px 0 0 -350px;
+}
    
 }
 
@@ -262,12 +293,7 @@
     }
     .list_menu{
         display: none;
-        
-       }
-    
-   
-     
-  
+    }
     .form-group {
         width: 75%;
     }
@@ -320,12 +346,8 @@
    
     .img_guide{
         height: 180px;
-    width: 100px;
-}
-
-
-
-
+        width: 100px;
+    }
 .logo_tour {
       
     padding: 0rem 1rem;
@@ -373,11 +395,11 @@
 }
 /* album */
 .list_album_thumb{
-    width: 500px;
+    width: 600px;
     height: 300px;
     top: 50%;
     left: 50%;
-    margin: -150px 0 0 -250px;
+    margin: -150px 0 0 -300px;
     overflow: hidden;
 }
 .list_album{
@@ -400,15 +422,24 @@
 .title_contact{
     font-size: 1.2rem;
 }
-.form_contact, .map_tour{
+ 
+.map_tour{
     width: 400px;
     height: 375px;
     margin: -187px 0 0 -200px;
+}
+.form_contact{
+    width: 400px;
+    height: 400px;
+    margin: -200px 0 0 -200px;
 }
 .guide_tour{
     width: 400px;
     height: 300px;
     margin: -150px 0 0 -200px;
+}
+.form_guide_text{
+    font-size: 0.9rem;
 }
 .form-project {
     width: 400px;
@@ -417,11 +448,30 @@
 }
 .info_image {
     width: 600px;
-    height: 300px;
-    margin: -150px 0 0 -300px;
+    height: 200px;
+    margin: -100px 0 0 -300px;
 }
-.row_info_image{
+/* .row_info_image{
     height: 230px;
+} */
+
+.row_info_image{
+    height: 140px;
+}
+
+.col_info_image img{
+    object-fit: cover;
+}
+/* info */
+.info_general{
+    width: 600px;
+    height: 350px;
+    margin: -175px 0 0 -300px;
+}
+.form_popup{
+    width: 600px;
+    height: 350px;
+    margin: -175px 0 0 -300px;
 }
 }
 @media all and (max-width:768px){
@@ -560,6 +610,9 @@
     height: 300px;
     margin: -150px 0 0 -200px;
 }
+.form_guide_text{
+    font-size: 0.9rem;
+}
 .form-project {
     width: 400px;
     height: 200px;
@@ -567,11 +620,26 @@
 }
 .info_image {
     width: 400px;
-    height: 200px;
-    margin: -100px 0 0 -200px;
+    height: 230px;
+    margin: -115px 0 0 -200px;
 }
 .row_info_image{
     height: 140px;
+}
+
+.col_info_image img{
+    object-fit: cover;
+}
+/* info */
+.info_general{
+    width: 400px;
+    height: 350px;
+    margin: -175px 0 0 -200px;
+}
+.form_popup{
+    width: 400px;
+    height: 350px;
+    margin: -175px 0 0 -200px;
 }
 }
 
@@ -687,13 +755,9 @@
 }
 /* popup */
 
-
-.info_duan, .info_infomation_image, .popup, .info_information, .image_tra{
-    /* top:35%; */
-}
-.info_general{
+/* .info_general{
     width: 80%;
-}
+} */
 
 
 .form_popup {
@@ -800,15 +864,23 @@
 .title_contact{
     font-size: 1.2rem;
 }
-.form_contact, .map_tour{
+.map_tour{
     width: 400px;
     height: 375px;
     margin: -187px 0 0 -200px;
+}
+.form_contact{
+    width: 400px;
+    height: 400px;
+    margin: -200px 0 0 -200px;
 }
 .guide_tour{
     width: 400px;
     height: 300px;
     margin: -150px 0 0 -200px;
+}
+.form_guide_text{
+    font-size: 0.9rem;
 }
 .form-project {
     width: 400px;
@@ -817,12 +889,27 @@
 }
 .info_image {
     width: 400px;
-    height: 200px;
-    margin: -100px 0 0 -200px;
+    height: 250px;
+    margin: -125px 0 0 -200px;
 }
 .row_info_image{
-    height: 140px;
+    height: 130px;
 }
+.col_info_image img{
+    object-fit: cover;
+}
+/* info */
+.info_general{
+    width: 400px;
+    height: 350px;
+    margin: -175px 0 0 -200px;
+}
+.form_popup{
+    width: 400px;
+    height: 350px;
+    margin: -175px 0 0 -200px;
+}
+
 
 }
 
@@ -943,9 +1030,9 @@
    .content-form{
     padding:0rem
    }
-   .info_general{
+   /* .info_general{
     padding:1rem;
-   }
+   } */
    .footer_general_image {
     padding:0.2rem 0.5rem;
    }
@@ -961,12 +1048,6 @@
    .form_guide_text{
     font-size: 0.8rem;
    }
-.info_duan, .info_infomation_image, .popup, .info_information, .image_tra{
-    /* top:35%; */
-}
-.info_general{
-    width: 80%;
-}
 
 .form_popup {
     width: 80%;
@@ -1070,10 +1151,15 @@
         font-size: 1rem;
         padding: 0rem 0.5rem;
     }
-    .form_contact, .guide_tour, .map_tour{
+    .guide_tour, .map_tour{
         width: 300px;
         height: 350px;
         margin: -175px 0 0 -150px;
+    }
+    .form_contact{
+        width: 300px;
+        height: 375px;
+        margin: -182px 0 0 -150px;
     }
     .form-project {
         width: 300px;
@@ -1086,7 +1172,21 @@
         margin: -100px 0 0 -150px;
     }
     .row_info_image{
-        height: 140px;
+        height: 120px;
+    }
+    .col_info_image img{
+        object-fit: cover;
+    }
+    /* info */
+    .info_general{
+        width: 300px;
+        height: 350px;
+        margin: -175px 0 0 -150px;
+    }
+    .form_popup{
+        width: 300px;
+        height: 350px;
+        margin: -175px 0 0 -150px;
     }
 
 }
@@ -1126,9 +1226,9 @@ h5{
    .content-form{
     padding:0rem
    }
-   .info_general{
+   /* .info_general{
     padding:1rem;
-   }
+   } */
    .footer_general_image {
     padding:0.2rem 0.5rem;
    }
@@ -1231,12 +1331,10 @@ h5{
     .logo_ocop{
         font-size: 0.6rem;
     }
-    .info_duan, .info_infomation_image, .popup, .info_information, .image_tra{
-        /* top:35%; */
-    }
-    .info_general{
+   
+    /* .info_general{
         width: 80%;
-    }
+    } */
     
    
     .form_popup {
@@ -1336,15 +1434,21 @@ h5{
         font-size: 1rem;
         padding: 0rem 0.5rem;
     }
+
     /* map, contact, guide, info  */
     .button_close {
         font-size: 1rem;
         padding: 0rem 0.5rem;
     }
-    .form_contact, .guide_tour, .map_tour{
+    .guide_tour, .map_tour{
         width: 300px;
         height: 350px;
         margin: -175px 0 0 -150px;
+    }
+    .form_contact{
+        width: 300px;
+        height: 375px;
+        margin: -182px 0 0 -150px;
     }
     .form-project {
         width: 300px;
@@ -1357,7 +1461,21 @@ h5{
         margin: -100px 0 0 -150px;
     }
     .row_info_image{
-        height: 140px;
+        height: 120px;
+    }
+    .col_info_image img{
+        object-fit: cover;
+    }
+    /* info */
+    .info_general{
+        width: 300px;
+        height: 350px;
+        margin: -175px 0 0 -150px;
+    }
+    .form_popup{
+        width: 300px;
+        height: 350px;
+        margin: -175px 0 0 -150px;
     }
     
     

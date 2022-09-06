@@ -881,12 +881,16 @@
 		if(newsceneindex LT 0, copy(newsceneindex,lastsceneindex));
 		if(newsceneindex GT lastsceneindex, set(newsceneindex,0));
 		skin_loadscene(get(newsceneindex), calc(indexadd LT 0 ? skin_settings.loadscene_blend_prev : skin_settings.loadscene_blend_next));
+		
+		prev_title();
+		
 	</action>
 
 <action name="prev_title" type="Javascript">
 	<![CDATA[
-      
-       var name_scene = krpano.get("scene[" + args[1] + "].title");
+
+	   var name_scene = krpano.get("scene[get(xml.scene)].title");
+	  
       var title2 = String(name_scene);
        var title_scene= document.getElementById("name_scene");
          
@@ -1370,5 +1374,35 @@
 		switch(autorotate.enabled);
 		switch(layer[skin_btn_rotate].url, skin/rotate.png, skin/lock.png);
 	</action>
+
+<action name="prevscene">
+	showlog();
+    trace(get(scene[%i].title));
+	if(%1 != findnext, sub(i,scene.count,1));
+	txtadd(scenexml,'<krpano>',get(scene[%i].content),'</krpano>');
+	if(scenexml == xml.content,
+   	dec(i);
+   	if(i LT 0, sub(i,scene.count,1));
+   	loadscene(get(scene[%i].name), null, MERGE, BLEND(1));
+  	,
+   	dec(i);
+   	if(i GE 0, prevscene(findnext));
+  	);
+	prev_title(get(scene[%i].title);
+	
+</action>
+
+<action name="nextscene">
+	if(%1 != findnext, set(i,0));
+	txtadd(scenexml,'<krpano>',get(scene[%i].content),'</krpano>');
+	if(scenexml == xml.content,
+   	inc(i);
+   	if(i == scene.count, set(i,0));
+   	loadscene(get(scene[%i].name), null, MERGE, BLEND(1));
+  	,
+   	inc(i);
+   	if(i LT scene.count, nextscene(findnext));
+  	);
+</action>
 
 </krpano>

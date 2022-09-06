@@ -186,9 +186,9 @@ $(".close_album_thumb").click(function(){
 $(".popup").click(function(){
   $(".popup").hide();
 });
-$(".info_duan").click(function(){
-  $(".info_duan").hide();
-});
+// $(".info_duan").click(function(){
+//   $(".info_duan").hide();
+// });
 $(".info_infomation_image").click(function(){
   $(".info_infomation_image").hide();
 });
@@ -477,7 +477,13 @@ var array_info = [
 // xử lý popup
 
 function showform(data){
- 
+  if( $(document).width() < 601 ){
+    $(".menu_sub").hide();
+  };
+  if( $(document).width() < 801 ){
+    $(".menu_sub").hide();
+  };
+
   document.getElementById('popup_').style.display = "flex";
 
   $("#title_form").html(data.title_list);
@@ -485,6 +491,12 @@ function showform(data){
 }
 // show info tra
 function show_info(data){
+  if( $(document).width() < 601 ){
+    $(".menu_sub").hide();
+  };
+  if( $(document).width() < 801 ){
+    $(".menu_sub").hide();
+  };
   document.getElementById('info_information').style.display = "flex";
   $("#title_info_general").html(data.title_info);
   $("#content_info_general").html(data.content_info);
@@ -492,6 +504,7 @@ function show_info(data){
   
 }
 function show_image(){
+  
   document.getElementById('image_tra').style.display = "flex";
 
    document.getElementById('info_information').style.display = "none";
@@ -504,6 +517,12 @@ function close_info(){
   document.getElementById('info_information').style.display = "none";
 }
 function show_htx(data){
+  if( $(document).width() < 601 ){
+    $(".menu_sub").hide();
+  };
+  if( $(document).width() < 801 ){
+    $(".menu_sub").hide();
+  };
   document.getElementById('info_duan').style.display = "flex";
  
  
@@ -740,12 +759,9 @@ krpano.call("loadscene(" + panoName + ");");
 // xư lý thumbs list
 $(document).ready(function(){
  
-  
- 
   $(".button_close").click(function(){
     $(".popup").hide();
   });
-  
   
   
 });
