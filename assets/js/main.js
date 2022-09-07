@@ -605,6 +605,18 @@ function close_image_duan_tra(){
         
         
     });
+    $(".item_menu_top_mobile").click(function(event){
+      // const id = this.id.split('_')[1];
+        var id = $(this).attr("id").split('_')[1];
+      
+        $(".list_sub_top_mobile").hide();
+        // $(`#panel_${id}`).addClass('panel-hien');
+        $(`#panel_${id}`).show();
+       
+
+    });
+  
+    
     // title scene html 
     getSceneTitleName();
     function getSceneTitleName(){ 
@@ -646,12 +658,12 @@ function close_image_duan_tra(){
       $("#hotspot_Close").show();
       krpano.call("showallhotspot()");
     });
-    $(".slick-slide.slick-current").click(function(e){
-      // $(".slick-slide").addclass("slick-current");
+    // $(".slick-slide.slick-current").click(function(e){
+    //   // $(".slick-slide").addclass("slick-current");
    
-      krpano.call("loadscene_with_name()");
+    //   krpano.call("loadscene_with_name()");
      
-    });
+    // });
    
     // xu ly active khi click
   $(".item_sub_top").click(function(e){
@@ -703,7 +715,7 @@ function close_image_duan_tra(){
       el.classList.add("active");
     
     });
-    $(this).addClass("active_menu");
+    $(this).addClass("active_sub");
     $(this).removeClass("active");
  
     krpano.call("load_scene(" +link_scene + ")");
@@ -762,6 +774,8 @@ $(document).ready(function(){
   $(".button_close").click(function(){
     $(".popup").hide();
   });
+  // menu mobile
+ 
   
   
 });

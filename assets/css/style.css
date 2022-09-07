@@ -519,6 +519,9 @@ h5{
     color:#f68a07 !important;
     
 }
+.list_sub_top_mobile.item_menu_top_mobile .active_sub{
+    color:#f68a07 !important;
+}
 .link_menu:hover{
     color:#f68a07;
 }
@@ -943,6 +946,14 @@ cursor: pointer;
 #icon_menusub{
     display: none;
 }
+
+.list_sub_top_mobile{
+    display: none;
+}
+.panel-hien{
+    display: block;
+}
+
 
 /* album thumb */
 .album_thumb{
