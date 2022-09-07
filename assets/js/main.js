@@ -233,7 +233,7 @@ $(document).ready(function(){
 
   });
   $(".form").click(function(){
-      $(".form").hide();
+      // $(".form").hide();
       $("#icon_sharelink").css('opacity','1');
       $("#icon_guide").css('opacity','1');
       $("#icon_mute").css('opacity','1');
@@ -307,9 +307,9 @@ $(document).ready(function(){
   $(".info_toancanh").click(function(){
     $(".form").hide();
   });
-  $(".form").click(function(){
-      $(".form").hide();
-  });
+  // $(".form").click(function(){
+  //     $(".form").hide();
+  // });
   $("info_toancanh").click(function(){
       $(".form").show();
   });
@@ -503,6 +503,10 @@ function show_info(data){
   
   
 }
+function close_contact(){
+  document.getElementById('form').style.display = "none";
+}
+
 function show_image(){
   
   document.getElementById('image_tra').style.display = "flex";
