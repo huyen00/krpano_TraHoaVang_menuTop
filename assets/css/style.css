@@ -985,6 +985,18 @@ cursor: pointer;
     height:100%;
     padding-right:0rem;
 }
+.item_img_album{
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.item_img_album:hover .img_album{
+    transition: 0.5s;
+   transform: scale(1.2);
+}
 .item_album{
     width: 20%;
     height: 130px;

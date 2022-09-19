@@ -698,6 +698,35 @@ function close_image_duan_tra(){
     getSceneTitleName();
    
   });
+  // xu ly active khi click album thumb
+  $(".item_album").click(function(e){
+    var link_scene = $(this).attr('id');
+    console.log(link_scene);
+   
+    var elems = document.querySelectorAll(".active");
+    [].forEach.call(elems, function(el) {
+      el.classList.remove("active");
+      
+    });
+    var elems = document.querySelectorAll(".active_menu");
+      [].forEach.call(elems, function(el) {
+        el.classList.remove("active_menu");
+      
+      });
+     
+    $(this).addClass("active");
+    $(this).removeClass("active_menu");
+    console.log($(this).attr('id'));
+    let target_active_menu = "#" + $(this).attr('id')
+    var elems_active_menu = document.querySelectorAll(target_active_menu);
+      [].forEach.call(elems_active_menu, function(el) {
+        el.classList.add("active_menu");
+      
+      });
+    krpano.call("load_scene(" +link_scene + ")");
+    getSceneTitleName();
+   
+  });
 
   // xu lys show scene menu
   $(".item_menu_top_mobile").click(function(e){
