@@ -1,6 +1,6 @@
 <krpano>
-  <style name="hs_flycam" url="skin/hs_flycam1.png"
-    scale="0.2"
+   <style name="hs_flycam" url="skin/hs_flycam.png"
+    scale="0.8"
     edge="top" 
     distorted="true"
     tooltip=""
@@ -8,11 +8,12 @@
     linkedscene_lookat=""
     ondown="draghotspot();" 
     onclick="skin_hotspotstyle_click();activeScene_menu();activeScene();linkscene_title()"
-    onover="tween(scale,0.25);"
-    onout="tween(scale,0.2);"
-    onloaded="wobble(scale,0.2,0.25,0.7);"
+    onover="tween(scale,0.85);"
+    onout="tween(scale,0.8);"
+    onloaded="wobble(scale,0.8,0.75,0.7);"
     onhover="get_scene_data"
   />
+
 
   <style name="skin_hotspotstyle_move" url="skin/hs_dichuyen1.png" edge="top" distorted="true"
 	  tooltip=""
