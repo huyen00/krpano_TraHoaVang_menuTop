@@ -622,7 +622,7 @@ function close_image_duan_tra(){
   
     
     // title scene html 
-    getSceneTitleName();
+
     function getSceneTitleName(){ 
       var title = String( krpano.get("scene[get(xml.scene)].title") ); 
       console.log("title ="+ title);
